@@ -26,13 +26,14 @@
     "@babel/eslint-parser": "^7.13.14",
     "@quasar/app-webpack": "^3.0.0",
     "@vue/cli-plugin-vuex": "~5.0.0",
-    "electron": "^25.3.0",
+    "electron": "^25.3.1",
     "electron-packager": "^17.1.1",
     "eslint": "^8.10.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-vue": "^9.0.0",
     "eslint-webpack-plugin": "^3.1.1",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "workbox-webpack-plugin": "^6.6.0"
   },
   "browserslist": [
     "last 10 Chrome versions",
@@ -52,7 +53,7 @@
   },
   "productName": "99c Assessment",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/ShaneKolkoto/99c-assessment.git"
+    "type": "git",
+    "url": "https://github.com/ShaneKolkoto/99c-assessment.git"
   }
 }
