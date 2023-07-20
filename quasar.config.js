@@ -76,7 +76,7 @@ module.exports = configure(function (ctx) {
     // Full list of options: https://v2.quasar.dev/quasar-cli-webpack/quasar-config-js#Property%3A-devServer
     devServer: {
       server: {
-        type: "http",
+        type: "https",
       },
       port: 8080,
       open: true, // opens browser window automatically
@@ -106,49 +106,7 @@ module.exports = configure(function (ctx) {
 
     // https://v2.quasar.dev/quasar-cli-webpack/developing-ssr/configuring-ssr
     ssr: {
-      pwa: {
-        workboxPluginMode: "InjectManifest",
-        workboxOptions: {
-          swSrc: "src-pwa/custom-service-worker.js", // Path to your custom service worker file
-        },
-        manifest: {
-          name: "99c Assessment",
-          short_name: "99c",
-          description:
-            "A three simple views application done with quasar and vue 3",
-          display: "standalone",
-          orientation: "portrait",
-          background_color: "#ffffff",
-          theme_color: "#027be3",
-          icons: [
-            {
-              src: "icons/icon-128x128.png",
-              sizes: "128x128",
-              type: "image/png",
-            },
-            {
-              src: "icons/icon-192x192.png",
-              sizes: "192x192",
-              type: "image/png",
-            },
-            {
-              src: "icons/icon-256x256.png",
-              sizes: "256x256",
-              type: "image/png",
-            },
-            {
-              src: "icons/icon-384x384.png",
-              sizes: "384x384",
-              type: "image/png",
-            },
-            {
-              src: "icons/icon-512x512.png",
-              sizes: "512x512",
-              type: "image/png",
-            },
-          ],
-        },
-      },
+      pwa: false,
 
       // manualStoreHydration: true,
       // manualPostHydrationTrigger: true,
