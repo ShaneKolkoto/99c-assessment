@@ -1,7 +1,7 @@
 const express = require("express"),
   app = express(),
   formidable = require("formidable"),
-  path = require("node:path"),
+  path = require("path"),
   fs = require("fs"),
   throttle = require("express-throttle-bandwidth");
 
