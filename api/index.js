@@ -2,7 +2,7 @@ const express = require("express"),
   app = express(),
   formidable = require("formidable"),
   path = require("node:path"),
-  fs = require("node:fs"),
+  fs = require("fs"),
   throttle = require("express-throttle-bandwidth");
 
 const port = process.env.PORT || 3000,
