@@ -5,7 +5,8 @@
   "description": "A three simple views application done with quasar and vue 3",
   "author": "ShaneKolkoto <shanekolkoto@gmail.com>",
   "scripts": {
-    "build": "quasar build -m electron",
+    "build": "quasar build",
+    "build:electron": "quasar build -m electron",
     "lint": "eslint --ext .js,.vue ./",
     "dev": "quasar dev",
     "format": "prettier --write \"**/*.{js,vue,css,html,md,json}\" --ignore-path .gitignore",
@@ -53,5 +54,5 @@
   "repository": {
     "type" : "git",
     "url" : "https://github.com/ShaneKolkoto/99c-assessment.git"
-  },
+  }
 }
