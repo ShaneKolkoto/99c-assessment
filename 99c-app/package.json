@@ -1,18 +1,16 @@
 {
   "name": "99c-app",
   "version": "0.0.1",
-  "description": "A three simple views application done with quasar and vue 3",
-  "productName": "99c Assessment",
-  "author": "ShaneKolkoto <shanekolkoto@gmail.com>",
   "private": true,
+  "description": "A three simple views application done with quasar and vue 3",
+  "author": "ShaneKolkoto <shanekolkoto@gmail.com>",
   "scripts": {
+    "build": "quasar build -m electron",
     "lint": "eslint --ext .js,.vue ./",
-    "format": "prettier --write \"**/*.{js,vue,css,html,md,json}\" --ignore-path .gitignore",
-    "test": "echo \"No test specified\" && exit 0",
     "dev": "quasar dev",
-    "build": "quasar build",
-    "electron": "quasar build -m electron",
-    "icons": "icongenie generate -i AppIcon.png --skip-trim"
+    "format": "prettier --write \"**/*.{js,vue,css,html,md,json}\" --ignore-path .gitignore",
+    "icons": "icongenie generate -i AppIcon.png --skip-trim",
+    "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
@@ -20,11 +18,13 @@
     "core-js": "^3.6.5",
     "quasar": "^2.6.0",
     "vue": "^3.0.0",
-    "vue-router": "^4.0.0"
+    "vue-router": "^4.0.0",
+    "vuex": "^4.1.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.13.14",
     "@quasar/app-webpack": "^3.0.0",
+    "@vue/cli-plugin-vuex": "~5.0.0",
     "electron": "^25.3.0",
     "electron-packager": "^17.1.1",
     "eslint": "^8.10.0",
@@ -48,5 +48,10 @@
     "node": ">= 12.22.1",
     "npm": ">= 6.13.4",
     "yarn": ">= 1.21.1"
-  }
+  },
+  "productName": "99c Assessment",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/ShaneKolkoto/99c-assessment.git"
+  },
 }

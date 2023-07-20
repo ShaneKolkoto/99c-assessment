@@ -1,7 +1,7 @@
 <template>
-  <q-footer class="q-pa-md bg-black">
-    <q-card class="bg-black" flat>
-      <q-card-text class="pt-2">
+  <q-footer class="q-pa-md bg-white">
+    <q-card class="bg-white" flat>
+      <q-card-text class="pt-2 text-black">
         Created by Shane Morne Kolkoto <span class="text-red">♥️</span>
       </q-card-text>
     </q-card>
